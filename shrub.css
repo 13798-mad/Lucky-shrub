@@ -1,0 +1,140 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navb{
+    display:block;
+}
+nav{
+    border: 2px solid rgb(9, 73, 39);
+}
+.navb nav{
+    display:flex;
+    background-color:  rgb(4, 88, 12);
+    padding:10px;
+    justify-content:space-around;
+    width: 100%;
+    box-sizing: border-box;
+}
+.navb nav a{
+    color:rgb(169, 223, 161);
+    font-size: 30px;
+    text-decoration: none;
+    padding:10px;
+}
+.navb nav a:hover{
+    color:white;
+    padding:10px;
+}
+.foot{
+    background-color: rgb(4, 88, 12);
+    width:100%;
+    color:white;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.img_logo {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    background-color:rgb(250, 219, 180)
+}
+.img_logo img {
+    height: 100px; 
+    padding:20px;
+}
+.photo img{
+    padding:20px;
+    border-radius: 50px;
+}
+.menu{
+    display: flex;
+    background-color: rgb(242, 219, 192);
+    align-items: center;
+}
+.info{
+    font-size: 20px;
+}
+.iii img{
+    padding:10px;
+}
+.three_col, .first {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin:6px;
+}
+.first{
+    display: block;
+}
+.first img{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.three_col{
+    background-color: rgb(242, 219, 192);
+    padding-top:20px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.photo img{
+    animation: fadeIn 1s ease-in-out forwards; 
+}
+.seperate{
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin:20px;
+}
+.newline p:first-child{
+    text-align: center;
+}
+.seperate img:first-child{
+    align-items: center;
+}
+@media only screen and (max-width: 768px) {
+    .navb nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navb nav a {
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .img_logo img {
+        height: 80px;
+        padding: 10px;
+    }
+
+    .first img {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .three_col {
+        flex-direction: column;
+    }
+
+    .first,
+    .separate {
+        margin: 0;
+    }
+
+    .separate img {
+        width: 100%;
+    }
+}
